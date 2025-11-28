@@ -1,4 +1,3 @@
-# ==================== database.py ====================
 """
 SQLite Database for session management and memory
 """

@@ -1,4 +1,3 @@
-# ==================== tools/memory_tool.py ====================
 """
 Memory Tool: Manages conversation history and long-term memory
 """

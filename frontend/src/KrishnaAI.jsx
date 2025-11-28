@@ -275,42 +275,6 @@ const KrishnaAI = () =>
       chatRef.current?.scrollIntoView({ behavior: 'smooth' });
     }, 100);
   };
-
-
-  const FloatingParticles = () => {
-    return (
-      <div className="absolute inset-0 overflow-hidden pointer-events-none">
-        {[...Array(20)].map((_, i) => (
-          <div
-            key={i}
-            className="absolute animate-float"
-            style={{
-              left: `${Math.random() * 100}%`,
-              top: `${Math.random() * 100}%`,
-              animationDelay: `${Math.random() * 5}s`,
-              animationDuration: `${5 + Math.random() * 10}s`
-            }}
-          >
-            <div className="text-2xl opacity-30">
-              {['🦚', '🪔', '✨', '🌸', '🎵'][Math.floor(Math.random() * 5)]}
-            </div>
-          </div>
-        ))}
-        <style jsx>{`
-          @keyframes float {
-            0%, 100% { transform: translateY(0px) translateX(0px); }
-            25% { transform: translateY(-20px) translateX(10px); }
-            50% { transform: translateY(-40px) translateX(-10px); }
-            75% { transform: translateY(-20px) translateX(5px); }
-          }
-          .animate-float {
-            animation: float linear infinite;
-          }
-        `}</style>
-      </div>
-    );
-  }
-  
   return (
     <div className={`min-h-screen transition-all duration-500 ${darkMode ? 'dark' : ''}`}>
       

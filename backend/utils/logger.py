@@ -1,8 +1,3 @@
-# ==================== utils/logger.py ====================
-"""
-Observability: Logging system for tracking agent activities
-"""
-
 import logging
 from datetime import datetime
 
